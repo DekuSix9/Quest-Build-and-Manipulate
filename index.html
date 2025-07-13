@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tailwind HTML</title>
+  <title>Donation Campaign</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -33,15 +33,16 @@
 
         </nav>
         <!-- Navbar End -->
+
         <div class=" py-[100px] flex justify-center items-center space-x-4">
-         <button class=" bg-[#B4F461] px-[24px] py-[8px]  border-2 rounded-lg font-semibold ">
+         <button id="btn-donation" class=" bg-[#B4F461] px-[24px] py-[8px]  border-2 rounded-lg font-semibold ">
           Donation</button>   
-          <button class="  px-[24px] py-[8px] border-2  rounded-lg font-semibold">
+          <button id="btn-history" class="  px-[24px] py-[8px] border-2  rounded-lg font-semibold">
           History</button>         
       </div>
 
         <!-- Donation section start -->
-         <section >
+         <section id="donation-section" >
             <!-- Card-1 -->
             <div class="max-w-5xl mx-auto my-10 p-6 bg-white rounded-xl shadow-lg flex flex-col md:flex-row gap-6">
 
@@ -134,6 +135,15 @@
     <button class="bg-lime-400 hover:bg-lime-500 text-black font-semibold py-2 rounded-md transition">Donate Now</button>
   </div>
               </div>
+  </section>
+<!-- 
+History Section -->
+  <section class="hidden" id="history-section">
+
+    <div>
+
+      <h1>History Section</h1>
+    </div>
 
 
 
@@ -142,7 +152,11 @@
 
 
 
-         </section>
+
+  </section>
+
+
+
 
 
 
@@ -153,6 +167,6 @@
     </main>
 
   
-
+<script src="/Js/Features.js"></script>
 </body>
 </html>
