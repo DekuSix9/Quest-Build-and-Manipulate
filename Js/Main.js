@@ -14,10 +14,19 @@ function donationCount() {
     const text=document.createElement('h1');
     text.innerText=`${EntermoneyInput} Donate for Flood at Noakhali, Bangladesh.`;
     document.getElementById('history-section').appendChild(text);
+
+
+    document.getElementById('conrats-card').classList.remove('hidden');
+    
   } else {
-    alert('You donot have enough.');
+    alert('You donot have enough money.');
   }
 }
+
+ function closeBtn(){
+    document.getElementById('conrats-card').classList.add('hidden');
+ }
+
 
 
 function donationCount2() {
@@ -36,10 +45,19 @@ function donationCount2() {
     const text=document.createElement('h1');
     text.innerText=`${EntermoneyInput} Donate for Flood Relief in Feni,Bangladesh.`;
     document.getElementById('history-section').appendChild(text);
+
+      document.getElementById('conrats-card1').classList.remove('hidden');
+
   } else {
     alert('You donot have enough.');
   }
 }
+
+ function closeBtn1(){
+    document.getElementById('conrats-card1').classList.add('hidden');
+ }
+
+
 
 function donationCount3() {
   const EntermoneyInput = document.getElementById('enter-money-3').value;
@@ -57,7 +75,14 @@ function donationCount3() {
     const text=document.createElement('h1');
     text.innerText=`${EntermoneyInput} Aid for Injured in the Quota Movement.`;
     document.getElementById('history-section').appendChild(text);
+
+     document.getElementById('conrats-card2').classList.remove('hidden');
+
   } else {
     alert('You donot have enough.');
   }
 }
+
+ function closeBtn2(){
+    document.getElementById('conrats-card2').classList.add('hidden');
+ }
